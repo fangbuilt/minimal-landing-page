@@ -5,9 +5,177 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>minimal-landing-page</title>
+    <script
+      src="https://kit.fontawesome.com/81634d0f93.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div id="app"></div>
+    <header
+      class="hidden md:flex justify-between p-6 items-center sticky top-0 bg-white shadow shadow-green-600 z-50"
+    >
+      <nav>
+        <a href="#" aria-label="Nextcent home"
+          ><img src="/public/nextcent-logo-on-bright.svg" alt="Nextcent's logo"
+        /></a>
+      </nav>
+      <nav class="absolute left-1/2 -translate-x-1/2">
+        <ul class="flex gap-6">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Feature</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Testimonial</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <nav class="flex gap-6">
+        <button
+          type="button"
+          class="cursor-pointer py-2 px-6 text-green-600 hover:text-green-700 hover:bg-gray-200 active:text-green-600 rounded-sm font-medium"
+        >
+          Login
+        </button>
+        <button
+          type="button"
+          class="cursor-pointer py-2 px-6 bg-green-600 hover:bg-green-700 active:bg-green-600 text-white rounded-sm"
+        >
+          Sign Up
+        </button>
+      </nav>
+    </header>
+    <header
+      class="md:hidden flex justify-between p-3 sticky top-0 bg-white shadow shadow-green-600 z-50"
+    >
+      <nav>
+        <a href="#" aria-label="Nextcent home"
+          ><img src="/public/nextcent-logo-on-bright.svg" alt="Nextcent's logo"
+        /></a>
+      </nav>
+      <nav><p>Menu</p></nav>
+    </header>
+    <main id="app">
+      <section
+        id="hero"
+        class="flex flex-col md:flex-row justify-between items-center mx-6"
+      >
+        <article class="flex flex-col gap-8">
+          <h1 class="text-5xl text-left font-medium text-gray-700">
+            Lessons and insights<br />
+            <span class="text-green-600">from 8 years</span>
+          </h1>
+          <p class="text-left">
+            Where to grow your business as a photographer: site or social media?
+          </p>
+          <button
+            type="button"
+            class="cursor-pointer py-2 px-6 bg-green-600 hover:bg-green-700 active:bg-green-600 text-white rounded-sm w-fit"
+          >
+            Sign Up
+          </button>
+        </article>
+        <article>
+          <img src="/public/graphic-1.svg" alt="Company Logo" sizes="" />
+        </article>
+      </section>
+      <section
+        id="client"
+        class="flex flex-col justify-center items-center mt-16 gap-12"
+      >
+        <div>
+          <h3 class="text-3xl text-center font-bold text-gray-700">
+            Our Clients
+          </h3>
+          <p class="text-center text-gray-700 mt-2">
+            We have been working with some Fortune 500+ clients
+          </p>
+        </div>
+        <div class="flex justify-around items-center w-full flex-wrap">
+          <img src="/public/logos/Logo.svg" alt="Client Logo" />
+          <img src="/public/logos/Logo-1.svg" alt="Client Logo" />
+          <img src="/public/logos/Logo-2.svg" alt="Client Logo" />
+          <img src="/public/logos/Logo-3.svg" alt="Client Logo" />
+          <img src="/public/logos/Logo-4.svg" alt="Client Logo" />
+          <img src="/public/logos/Logo-5.svg" alt="Client Logo" />
+        </div>
+      </section>
+      <section id="features" class="flex flex-col gap-16 mt-16">
+        <div>
+          <h3 class="text-3xl text-center font-bold text-gray-700">
+            Manage your entire community<br />in a single system
+          </h3>
+          <p class="text-center text-gray-700 mt-2">
+            Who is Nextcent suitable for?
+          </p>
+        </div>
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-16"
+        >
+          <article
+            class="flex flex-col items-center justify-around gap-4 border border-green-600 px-3 py-8 rounded-md shadow shadow-emerald-700 bg-green-100"
+          >
+            <img src="/public/icons/org-icon.svg" alt="Organization Icon" />
+            <h5 class="text-2xl text-center font-bold text-gray-700">
+              Membership<br />Organizations
+            </h5>
+            <p>
+              Our membership management software provides full automation of
+              membership renewals and payments
+            </p>
+          </article>
+          <article
+            class="flex flex-col items-center justify-around gap-4 border border-green-600 px-3 py-8 rounded-md shadow shadow-emerald-700 bg-green-100"
+          >
+            <img src="/public/icons/buildings-icon.svg" alt="Buildings Icon" />
+            <h5 class="text-2xl text-center font-bold text-gray-700">
+              National<br />Associations
+            </h5>
+            <p>
+              Our membership management software provides full automation of
+              membership renewals and payments
+            </p>
+          </article>
+          <article
+            class="flex flex-col items-center justify-around gap-4 border border-green-600 px-3 py-8 rounded-md shadow shadow-emerald-700 bg-green-100"
+          >
+            <img src="/public/icons/community-icon.svg" alt="Community Icon" />
+            <h5 class="text-2xl text-center font-bold text-gray-700">
+              Clubs And<br />Groups
+            </h5>
+            <p>
+              Our membership management software provides full automation of
+              membership renewals and payments
+            </p>
+          </article>
+        </div>
+      </section>
+      <section
+        id="last-cta"
+        class="flex flex-col gap-12 mt-48 mb-18 items-center"
+      >
+        <h1 class="text-5xl text-center font-medium text-gray-700">
+          So, what are you waiting for?
+        </h1>
+        <button
+          type="button"
+          class="w-fit cursor-pointer py-2 px-6 bg-green-600 hover:bg-green-700 active:bg-green-600 text-white rounded-sm"
+        >
+          Sign Up
+        </button>
+      </section>
+    </main>
+    <footer
+      class="flex justify-between p-6 items-center bg-slate-800 text-slate-200"
+    >
+      <p>Copyright © 2026 Nexcent ltd.</p>
+      <a
+        href="https://youtu.be/g9oaPTTp92c?si=lySOE4959ixByUsF"
+        aria-label="Subscribe"
+        target="_blank"
+      >
+        <i class="fa-brands fa-youtube fa-lg"></i>
+      </a>
+    </footer>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
