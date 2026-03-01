@@ -36,7 +36,7 @@ body {
 
 @theme {
   --animate-float: float 2.5s ease-in-out infinite;
-  --spacing-bottom-nav: 3rem;
+  --spacing-bottom-nav: calc(3rem + env(safe-area-inset-bottom));
 
   @keyframes float {
     0%,
